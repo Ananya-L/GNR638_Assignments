@@ -52,7 +52,7 @@ class ImageDataset:
         # Always return consistent batch
         return Tensor(X_batch, requires_grad=False), y_batch
 
-    def get_batches(self, batch_size=32):
+    def get_batches(self, batch_size=64):
         """Generator that yields STRICT fixed-size batches"""
         num_samples = len(self.samples)
 

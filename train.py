@@ -34,7 +34,7 @@ def main():
     parser.add_argument('--save_path', type=str, default='model.pkl')
     parser.add_argument('--epochs', type=int, default=5)
     parser.add_argument('--lr', type=float, default=0.01)
-    parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--batch_size', type=int, default=64)
 
     args = parser.parse_args()
 
@@ -48,8 +48,10 @@ def main():
     print("=" * 60)
     print("LOADING DATASET")
     print("=" * 60)
-
+    start = time.time()
     dataset = ImageDataset(args.dataset_path)
+    end = time.time()
+    print(f"dataset loading time: {end - start}")
     num_classes = len(dataset.class_map)
     num_samples = len(dataset)
 
