@@ -11,12 +11,15 @@ from utils.dataset import get_dataloaders, get_subset_loader
 from training.train import train_one_epoch
 from training.evaluate import evaluate
 
+
+import sys
 import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 save_dir = "/content/drive/MyDrive/GNR638_results"
 os.makedirs(save_dir, exist_ok=True)
 
-import sys
 
 log_file = open(f"{save_dir}/training_log.txt","w")
 sys.stdout = log_file
