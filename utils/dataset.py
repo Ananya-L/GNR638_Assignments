@@ -1,7 +1,7 @@
 import torchvision.transforms as transforms
 from torchvision.datasets import ImageFolder
-from torch.utils.data import DataLoader
-
+from torch.utils.data import DataLoader, Subset
+import numpy as np
 
 def get_dataloaders(data_dir, batch_size=32):
 
@@ -39,3 +39,19 @@ def get_dataloaders(data_dir, batch_size=32):
     )
 
     return train_loader, val_loader, len(train_dataset.classes)
+
+
+
+def get_subset_loader(dataset, fraction):
+
+    n = len(dataset)
+
+    indices = np.random.choice(
+        n,
+        int(n * fraction),
+        replace=False
+    )
+
+    subset = Subset(dataset, indices)
+
+    return subset
