@@ -1,0 +1,10 @@
+torch 
+torchvision 
+timm
+ scikit-learn
+ matplotlib 
+ seaborn
+ tqdm
+ opencv-python
+ thop
+ umap-learn

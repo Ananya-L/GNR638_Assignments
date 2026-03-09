@@ -46,5 +46,6 @@ def plot_pca_features(model, loader, device, model_name):
     plt.ylabel("PC2")
 
     plt.savefig(f"pca_features_{model_name}.png")
+    plt.savefig(f"/content/drive/MyDrive/pca_features_{model_name}.png")
 
     plt.show()

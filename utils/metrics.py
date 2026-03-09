@@ -42,5 +42,6 @@ def plot_confusion_matrix(model, loader, device, class_names, model_name):
     plt.ylabel("Actual")
 
     plt.savefig(f"confusion_matrix_{model_name}.png")
+    plt.savefig(f"/content/drive/MyDrive/confusion_matrix_{model_name}.png")
 
     plt.show()

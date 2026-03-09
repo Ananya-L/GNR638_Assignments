@@ -58,7 +58,10 @@ for model_name in models_to_run:
             f"Train Acc {train_acc:.3f}, "
             f"Val Acc {val_acc:.3f}"
         )
-
+    torch.save(
+    model.state_dict(),
+    f"/content/drive/MyDrive/{model_name}_linear_probe.pth"
+    )
     # Plot accuracy curve
     plt.figure()
 
@@ -72,6 +75,7 @@ for model_name in models_to_run:
     plt.legend()
 
     plt.savefig(f"linear_probe_{model_name}_accuracy.png")
+    plt.savefig(f"/content/drive/MyDrive/linear_probe_{model_name}_accuracy.png")
 
     plt.show()
 
