@@ -49,3 +49,4 @@ def plot_pca_features(model, loader, device, model_name):
     plt.savefig(f"/content/drive/MyDrive/pca_features_{model_name}.png")
 
     plt.show()
+
