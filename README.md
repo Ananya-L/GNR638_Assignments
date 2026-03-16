@@ -9,7 +9,7 @@ Each assignment is organized in a separate folder for clarity and ease of evalua
 ## Assignments
 
 - [Assignment 1](Assignment1/) – Machine learning training and evaluation framework  
-- Assignment 2 – To be added
+- [Assignment 2](Assignment2/) – To be added
 
 ---
 
