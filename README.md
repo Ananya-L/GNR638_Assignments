@@ -35,7 +35,42 @@ GNR638_Assignments/
 │
 └── README.md              # Main repository documentation
 ```
-
+```
+GNR638_Assignments/
+│
+└── Assignment2/
+    │
+    ├── experiments/
+    │   ├── corruption_test.py
+    │   ├── few_shot.py
+    │   ├── fine_tune.py
+    │   ├── layer_probe.py
+    │   ├── linear_probe.py
+    │   └── layer_probe_log.txt
+    │
+    ├── models/
+    │   └── model_loader.py
+    │
+    ├── training/
+    │   ├── evaluate.py
+    │   ├── train.py
+    │   ├── train_finetune.py
+    │   └── train_linear_probe.py
+    │
+    ├── utils/
+    │   ├── corruptions.py
+    │   ├── dataset.py
+    │   ├── feature_extractor.py
+    │   ├── metrics.py
+    │   └── plots.py
+    │
+    ├── main.py
+    ├── split_dataset.py
+    ├── split_dataset_finetune.py
+    ├── requirements.txt
+    ├── .gitignore
+    └── README.md
+```
 ---
 
 ## Authors
