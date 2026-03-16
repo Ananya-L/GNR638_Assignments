@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Build files
+build/
+dist/
+*.so
+*.pyd
+*.o
+
+# Model files
+*.pkl
+
+# Dataset
+Assignment 1 Datasets/
+
