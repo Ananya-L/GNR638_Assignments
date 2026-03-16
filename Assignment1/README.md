@@ -1,0 +1,139 @@
+# GNR638 – Assignment 1
+
+## Overview
+
+This directory contains the implementation for **Assignment 1 of the GNR638 course**.
+
+The assignment implements a machine learning framework that allows training, testing, and evaluating models using the provided dataset and configuration files.
+
+The implementation includes scripts for:
+
+- Training a model
+- Testing the trained model
+- Evaluating model performance
+- Managing configurations through a JSON configuration file
+
+---
+
+## Directory Structure
+
+```
+Assignment1/
+│
+├── data/              # Data files used for training and evaluation
+├── dataset/           # Dataset utilities and data loaders
+├── framework/         # Core ML framework implementation
+│
+├── train.py           # Script to train the model
+├── test.py            # Script to test the trained model
+├── eval.py            # Script to evaluate model performance
+│
+├── config.json        # Configuration file containing hyperparameters
+├── setup.py           # Setup script for installing modules
+│
+└── README.md          # Documentation
+```
+
+---
+
+## Requirements
+
+The project requires:
+
+- Python **3.8 or higher**
+
+Install required dependencies:
+
+```
+pip install numpy pandas torch scikit-learn tqdm
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/Ananya-L/GNR638_Assignments.git
+```
+
+Navigate to the Assignment 1 directory:
+
+```
+cd GNR638_Assignments/Assignment1
+```
+
+Install the project (optional):
+
+```
+pip install -e .
+```
+
+---
+
+## Configuration
+
+All model and training parameters are stored in:
+
+```
+config.json
+```
+
+This file contains parameters such as:
+
+- learning rate
+- batch size
+- number of epochs
+- dataset paths
+
+Modify these parameters if necessary before running the scripts.
+
+---
+
+## Training the Model
+
+To train the model run:
+
+```
+python train.py --config config.json
+```
+
+The trained model and logs will be saved in the output directory specified in the configuration file.
+
+---
+
+## Testing the Model
+
+To run the trained model on the test dataset:
+
+```
+python test.py --config config.json
+```
+
+---
+
+## Evaluation
+
+To evaluate the model performance:
+
+```
+python eval.py --config config.json
+```
+
+Evaluation metrics will be printed to the console.
+
+---
+
+## Notes
+
+- Ensure that the dataset is placed in the correct directory before running the scripts.
+- Modify `config.json` if dataset paths or hyperparameters change.
+- The scripts assume the directory structure shown above.
+
+---
+
+## Authors
+
+Ananya Latchupatula  
+Gehna Chelvi
